@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-title h2 {
+  font-family: "Araboto-black", sans-serif;
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.line-section {
+  display: block;
+  width: 40%;
+  height: 2px;
+  background-color: black;
+  transition: width 1s ease-in-out;
+}

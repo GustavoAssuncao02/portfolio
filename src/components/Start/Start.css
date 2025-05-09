@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Araboto-black";
+  src: url("../../assets/fonts/araboto-black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.text-start {
+  font-family: "Araboto-black", sans-serif;
+  font-size: 30px;
+  width: 50%;
+  padding-left: 50px;
+  line-height: 70px;
+  margin-left: 30px;
+}
+
+.text-start p {
+  font-size: 25px;
+  line-height: 40px;
+  color: #727272;
+  font-family: "Roboto", sans-serif;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 480px) {
+  .text-start {
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0;
+  }
+
+  .text-start p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .image-container {
+    width: 200px;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 768px) {
+}

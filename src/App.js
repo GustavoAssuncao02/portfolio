@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Header } from "./components/Header/Header";
+import { Start } from "./components/Start/Start";
+import { About } from "./components/About/About";
+import { Skills } from "./components/Skills/Skills";
+import { Projects } from "./components/Projects/Projects";
+import { Contacts } from "./components/Contact/Contact";
+import Logo from "./assets/images/icon.png";
+import LogoBranca from "./assets/images/logobranca.png";
+import CvGustavo from "./assets/files/cvgustavo.pdf"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="box">
+        <div className="logo-content">
+          <img src={Logo} alt="logo" className="logo logo-desktop" />
+        </div>
+
+        <div className="logo-mobile-container">
+          <img src={LogoBranca} alt="logo branca" className="logo-mobile" />
+        </div>
+
+        <Header />
+        <Start id="inicio" />
+        <div className="button-content">
+          <a href={CvGustavo} download="CV - Gustavo Assunção" className="download-btn">Download CV</a>
+        </div>
+        <About id="sobre" />
+        <Skills id="skills" />
+        <Projects id="projetos" />
+        <Contacts id="contato" />
+      </div>
     </div>
   );
 }
