@@ -65,10 +65,6 @@ body {
 
 /* MOBILE */
 @media (max-width: 480px) {
-  .logo-desktop {
-    display: none;
-  }
-
   .logo-mobile-container {
     display: block;
     position: relative;

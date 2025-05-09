@@ -1,5 +1,7 @@
 import "./Header.css";
 import { useState, useEffect } from "react";
+import LogoBranca from "../../assets/images/logobranca.png";
+
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +18,8 @@ export const Header = () => {
 
   return (
     <div className={`header-container ${scrolled ? "scrolled" : ""}`}>
+      <img src={LogoBranca} alt="logo" className="logo logo-mobile" />
+
       <div
         className={`hamburger ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}

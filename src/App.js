@@ -6,7 +6,6 @@ import { Skills } from "./components/Skills/Skills";
 import { Projects } from "./components/Projects/Projects";
 import { Contacts } from "./components/Contact/Contact";
 import Logo from "./assets/images/icon.png";
-import LogoBranca from "./assets/images/logobranca.png";
 import CvGustavo from "./assets/files/cvgustavo.pdf"
 
 function App() {
@@ -16,11 +15,6 @@ function App() {
         <div className="logo-content">
           <img src={Logo} alt="logo" className="logo logo-desktop" />
         </div>
-
-        <div className="logo-mobile-container">
-          <img src={LogoBranca} alt="logo branca" className="logo-mobile" />
-        </div>
-
         <Header />
         <Start id="inicio" />
         <div className="button-content">

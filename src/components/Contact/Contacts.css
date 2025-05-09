@@ -36,11 +36,29 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-
 @media (max-width: 480px) {
   .contacts-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    gap: 20px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .contact-img {
+    width: 60px;
+  }
+
+  .contact-card p {
+    font-size: 12px;
+    word-break: break-word;
+  }
+
+  .contact-card h4 {
+    font-size: 14px;
   }
 }
