@@ -1,0 +1,23 @@
+{
+  "download_cv": "Download CV",
+  "about": {
+    "title": "About Me",
+    "description": "I am a 23-year-old professional from Bahia, currently studying Systems Analysis and Development at the Federal Institute of Bahia. I work as a Systems Development Analyst, experienced in web application development and Data Analysis. I have knowledge in IT infrastructure and servers, including setup, management, and monitoring, enabling me to deliver more complete and reliable solutions. I value professionalism in all stages of my work, have good interpersonal communication skills, and am committed to deadlines and quality of technical deliveries."
+  },
+    "header": {
+    "l1": "Home",
+    "l2": "About me",
+    "l3": "Skills",
+    "l4": "Projects",
+    "l5": "Contact"
+  },
+"greeting": {
+    "title_line1": "Hello,",
+    "title_line2": "I am Gustavo",
+    "title_line3": "Assunção.",
+    "subtitle": "Systems and Data Development Analyst"
+  },
+  "skills": "Skills",
+  "contato": "Contact",
+  "projetos": "Projects"
+}

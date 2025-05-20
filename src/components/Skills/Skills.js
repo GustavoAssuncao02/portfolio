@@ -17,6 +17,7 @@ import skill14 from "../../assets/images/icons/sequelize.png";
 import skill15 from "../../assets/images/icons/sqlserver.png";
 import skill16 from "../../assets/images/icons/tableau.png";
 import skill17 from "../../assets/images/icons/typescript.png";
+import { useTranslation } from "react-i18next";
 
 let images = [
   skill13,
@@ -39,9 +40,10 @@ let images = [
 ];
 
 export const Skills = ({ id }) => {
+  const { t } = useTranslation();
   return (
     <div id={id}>
-      <Title data="Habilidades" />
+      <Title data={t("skills")} />
       <div className="skills-container">
         {images.map((img, index) => (
           <img

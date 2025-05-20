@@ -4,7 +4,7 @@ import Email from "../../assets/images/icons/Email.png";
 import LinkedIn from "../../assets/images/icons/linkedin.png";
 import Github from "../../assets/images/icons/github.png";
 import { Title } from "../Title/Title";
-
+import { useTranslation } from "react-i18next";
 let images = [
   {
     image: Whatsapp,
@@ -33,9 +33,11 @@ let images = [
 ];
 
 export const Contacts = ({ id }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="contact-container" id={id}>
-      <Title data="Contato" />
+      <Title data={t("contato")} />
       <div className="contacts-images">
         {images.map((img, i) => (
           <a

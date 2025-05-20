@@ -1,0 +1,23 @@
+{
+  "download_cv": "Download CV",
+  "about": {
+    "title": "Sobre mim",
+    "description": "Sou um profissional de 23 anos, nascido na Bahia, e graduando em Análise e Desenvolvimento de Sistemas pelo Instituto Federal Baiano. Atuo como Analista de Desenvolvimento de Sistemas, com experiência no desenvolvimento de aplicações web e na Análise de Dados. Tenho conhecimentos em infraestrutura de TI e servidores, incluindo configuração, gerenciamento e monitoramento de ambientes, o que me permite entregar soluções mais completas e confiáveis. Valorizo o profissionalismo em todas as etapas do meu trabalho, tenho boa comunicação interpessoal e sou comprometido com prazos e com a qualidade das entregas técnicas."
+  },
+  "header": {
+    "l1": "Início",
+    "l2": "Sobre mim",
+    "l3": "Habilidades",
+    "l4": "Projetos",
+    "l5": "Contato"
+  },
+  "greeting": {
+    "title_line1": "Olá,",
+    "title_line2": "Eu sou Gustavo",
+    "title_line3": "Assunção.",
+    "subtitle": "Analista de Desenvolvimento de Sistemas e Dados"
+  },
+  "skills": "Habilidades",
+  "contato": "Contato",
+  "projetos": "Projetos"
+}

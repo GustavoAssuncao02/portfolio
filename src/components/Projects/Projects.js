@@ -1,6 +1,7 @@
 import "./Projects.css";
 import { Title } from "../Title/Title";
 import Orion from "../../assets/images/projetos/orion1.png";
+import { useTranslation } from "react-i18next";
 
 let images = [
   {
@@ -11,9 +12,10 @@ let images = [
 ];
 
 export const Projects = ({ id }) => {
+  const { t } = useTranslation();
   return (
     <div className="projetcs-container" id={id}>
-      <Title data="Projetos" />
+      <Title data={t("projetos")} />
       <p>Mais projetos em breve!</p>
       <div className="images-projects-content">
         {images.map((img, index) => (

@@ -1,9 +1,11 @@
 import "./Header.css";
 import { useState, useEffect } from "react";
 import LogoBranca from "../../assets/images/logobranca.png";
-
+import { LanguageSwitcher } from "../LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  const {t} = useTranslation()
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -31,20 +33,21 @@ export const Header = () => {
 
       <ul className={`header-itens ${menuOpen ? "open" : ""}`}>
         <li>
-          <a href="#inicio">Início</a>
+          <a href="#inicio">{t("header.l1")}</a>
         </li>
         <li>
-          <a href="#sobre">Sobre mim</a>
+          <a href="#sobre">{t("header.l2")}</a>
         </li>
         <li>
-          <a href="#skills">Habilidades</a>
+          <a href="#skills">{t("header.l3")}</a>
         </li>
         <li>
-          <a href="#projetos">Projetos</a>
+          <a href="#projetos">{t("header.l4")}</a>
         </li>
         <li>
-          <a href="#contato">Contato</a>
+          <a href="#contato">{t("header.l5")}</a>
         </li>
+        <li className="buttonlanguage"><LanguageSwitcher /></li>
       </ul>
     </div>
   );

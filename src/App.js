@@ -6,9 +6,12 @@ import { Skills } from "./components/Skills/Skills";
 import { Projects } from "./components/Projects/Projects";
 import { Contacts } from "./components/Contact/Contact";
 import Logo from "./assets/images/icon.png";
-import CvGustavo from "./assets/files/cvgustavo.pdf"
+import CvGustavo from "./assets/files/cvgustavo.pdf";
+import "./i18n";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   return (
     <div className="container">
       <div className="box">
@@ -18,7 +21,13 @@ function App() {
         <Header />
         <Start id="inicio" />
         <div className="button-content">
-          <a href={CvGustavo} download="CV - Gustavo Assunção" className="download-btn">Download CV</a>
+          <a
+            href={CvGustavo}
+            download="CV - Gustavo Assunção"
+            className="download-btn"
+          >
+            {t("download_cv")}
+          </a>
         </div>
         <About id="sobre" />
         <Skills id="skills" />
